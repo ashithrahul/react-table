@@ -4,6 +4,7 @@ export const columns = [
     accessor: 'firstName',
     minWidth: 50,
     maxWidth: 150,
+    
   },
   {
     Header: 'Last Name',

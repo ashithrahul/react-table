@@ -1,23 +1,48 @@
-.table{
+.table {
   background: transparent;
-  color: #FFFFFF;
+  color: #ffffff;
   display: inline-block;
   border-spacing: 0;
-  //border: 1px solid black;
+  font-family: "Rubik", sans-serif;
 }
-
-
-.tbody .tr{
+.tbody .tr {
   border-radius: 5px;
 }
-
-
-.thead{
-
+.tr{
+  position: relative;
+}
+th
+{
+  position: relative;
 }
 
-.test{
+.thead {
+  color: #babcbd;
+  font-weight: bold;
+  font-size: 13px;
+}
+.test {
   margin-bottom: 5px;
   background: #22282e;
   border-radius: 5px;
 }
+
+.td {
+  color: #babcbd;
+  font-size: 15px;
+  text-align: left;
+ 
+}
+
+.checkboxWrapper
+{
+  display: inline-block;
+  position: relative;
+
+}
+
+
+
+
+
+

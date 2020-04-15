@@ -9,7 +9,7 @@ const App = () => (
     <GlobalContext.Provider>
         <Table
             columns={columns}
-            data={initialData}/>
+            data={initialData} />
     </GlobalContext.Provider>
 );
 export default App;

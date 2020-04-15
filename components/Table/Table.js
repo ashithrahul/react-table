@@ -4,18 +4,24 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import VirtualList from 'react-tiny-virtual-list';
 import * as styles from './Table.scss';
-
+import Checkbox from '../Checkbox/Checkbox';
+import FirstHorizontal from '../HorizontalLine/FirstHorizontal';
+import SecondHorizontal from '../HorizontalLine/SecondHorizontal';
+import ThirdHorizontal from '../HorizontalLine/ThirdHorizontal';
+import FourthHorizontal from '../HorizontalLine/FourthHorizontal';
 
 /* Table Body start */
 const TableBody = ({ row, style }) => (
   <div
     {...row.getRowProps({
-      style,
+      style, 
     })}
-    className={styles.tr}
-  >
-    <div className={styles.test}>
-      {row.cells.map((cell) => (
+    className={styles.tr}>
+       <div className={styles.test}>
+         <div className={styles.checkboxWrapper}>
+            <Checkbox />
+          </div>
+       {row.cells.map((cell) => (
         <div {...cell.getCellProps()} className={styles.td}>
           {cell.render('Cell')}
         </div>
@@ -39,12 +45,6 @@ TableBody.defaultProps = {
 };
 
 /* Table Body end */
-
-
-
-
-
-
 export default ({
   columns, data, update, classes,
 }) => {
@@ -82,10 +82,16 @@ export default ({
       <div className={styles.thead}>
         {headerGroups.map((headerGroup) => (
           <div {...headerGroup.getHeaderGroupProps()} className={styles.tr}>
-            {headerGroup.headers.map((column) => (
+          <Checkbox />
+             <div><FirstHorizontal /></div>
+            {headerGroup.headers.map((column,index) => (
               <div {...column.getHeaderProps()} className={styles.th}>
                 {column.render('Header')}
-              </div>
+                <SecondHorizontal />
+                <ThirdHorizontal />
+                <FourthHorizontal />
+           <span>{console.log(index)}</span>
+           </div>
             ))}
           </div>
         ))}
