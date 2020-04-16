@@ -7,10 +7,11 @@ vertical-align: middle;
 margin: 6px 16px 0px 20px;`
 
 const Icon = styled.svg`
-margin: 0px 1px 11px 2px;
+margin: 0px 0px 9px 0px;
     fill: none;
+    background-color: #3bd2fc;
     stroke: black;
-    stroke-width: 4px;`
+stroke-width: 4px;`
 
   const HiddenCheckbox = styled.input.attrs({ type: 'checkbox' })`
   border: 0;
@@ -22,7 +23,7 @@ margin: 0px 1px 11px 2px;
   padding: 0;
   position: absolute;
   white-space: nowrap;
-  width: 1px;
+  
 `
 const StyledCheckbox = styled.div`
 border-radius: 3px;
