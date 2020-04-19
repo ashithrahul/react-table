@@ -1,40 +1,34 @@
 export const columns = [
   {
+    Header: 'Id',
+    accessor: 'id',
+    minWidth: 50,
+    maxWidth: 150,
+  },
+  {
+    Header: 'Email',
+    accessor: 'email',
+    minWidth: 50,
+    maxWidth: 150,
+  },
+  {
     Header: 'First Name',
-    accessor: 'firstName',
+    accessor: 'first_name',
     minWidth: 50,
     maxWidth: 150,
   },
   {
     Header: 'Last Name',
-    accessor: 'lastName',
+    accessor: 'last_name',
     minWidth: 50,
     maxWidth: 150,
   },
   {
-    Header: 'Age',
-    accessor: 'age',
+    Header: 'Avatar',
+    accessor: 'avatar',
     minWidth: 50,
     maxWidth: 150,
-  },
-  {
-    Header: 'Visits',
-    accessor: 'visits',
-    minWidth: 50,
-    maxWidth: 150,
-  },
-  {
-    Header: 'Status',
-    accessor: 'status',
-    minWidth: 50,
-    maxWidth: 150,
-  },
-  {
-    Header: 'Profile Progress',
-    accessor: 'progress',
-    minWidth: 50,
-    maxWidth: 150,
-  },
+  }
 ];
 
 export const initialData = [{
